@@ -6,11 +6,10 @@
 script = ExtResource("1_uhqny")
 
 [node name="Icon" type="Button" parent="." unique_id=1455106643]
-offset_left = 143.0
-offset_top = 46.0
-offset_right = 210.9307
-offset_bottom = 299.60794
-scale = Vector2(4.9609375, 1)
-text = "Back"
+offset_left = 91.0
+offset_top = 90.0
+offset_right = 511.20587
+offset_bottom = 272.0
+text = "Go back"
 
 [connection signal="button_up" from="Icon" to="." method="_on_icon_button_up"]
