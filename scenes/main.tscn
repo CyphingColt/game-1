@@ -1,16 +1,19 @@
 [gd_scene format=3 uid="uid://cf1bnvrocd2kn"]
 
 [ext_resource type="Script" uid="uid://b4runvplf4q2k" path="res://scripts/main.gd" id="1_o5qli"]
+[ext_resource type="Texture2D" uid="uid://dto50snqilhbw" path="res://Assets/PlayButton.png" id="2_sugp2"]
+[ext_resource type="Texture2D" uid="uid://xoan4kjuy1m3" path="res://Assets/PlayButtonHover.png" id="3_jyhfs"]
 
 [node name="Node2D" type="Node2D" unique_id=1691056215]
 script = ExtResource("1_o5qli")
 
-[node name="PlayButton" type="Button" parent="." unique_id=543969374]
-offset_left = 105.0
-offset_top = 14.0
-offset_right = 533.5161
-offset_bottom = 338.0
-text = "Play
-"
+[node name="PlayButton" type="TextureButton" parent="." unique_id=664447129]
+offset_left = 78.00001
+offset_top = 83.0
+offset_right = 110.00001
+offset_bottom = 95.0
+scale = Vector2(15, 15)
+texture_normal = ExtResource("2_sugp2")
+texture_hover = ExtResource("3_jyhfs")
 
 [connection signal="button_up" from="PlayButton" to="." method="_on_play_button_button_up"]
